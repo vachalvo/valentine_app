@@ -1,16 +1,12 @@
-import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 
 import './App.css';
 
 
 
 function App() {
-
   const [x, setx] = useState(52);
   const [y, sety] = useState(55);
-  const form = useRef();
-
 
   const body = document.querySelector("body");
   if (!body) {
@@ -33,18 +29,11 @@ function App() {
 
   }, 100);
 
-
-  /* code for moving button */
-  const popUp = () => {
-    alert("Aha, chytila jsi tlačítko ne? \nTen kdo stiskne toto tlačítko vyhrává jeden volný lístek na rande 14. února s vhodným svobodným pánem, kterému můžete napsat na email - vachal.vojta@email.cz");
-  }
-
   const clickedYes = () => {
     alert("Buď jsi nemohla chytit tlačítko ne, nebo jsi opravdu chtěla být mým valentýnem. V obou připadech mi napiš na facebook a domluvíme <3.");
   }
 
-
-  function mouseOver() {
+  function onNoClick() {
     setx(Math.random() * 100);
     sety(Math.random() * 100);
   }
@@ -55,33 +44,25 @@ function App() {
     position: "absolute",
   };
 
-  var yesStyle = {
-    left: "40%",
-    top: "55%",
-    position: "absolute",
-  }
-
   return (
-    <>
+    <div className="wrapper">
     <p className="pre-valentine">
       Budeš mým
     </p>
     <p className="valentine">Valentýnem?</p>
       <button
-          style={yesStyle}
           type="submit"
           onClick={clickedYes}
       >
         ANO!
       </button>
       <button
-          onMouseOver={mouseOver}
           style={noStyle}
-          onClick={popUp}
+          onClick={onNoClick}
       >
         ne
       </button>
-    </>
+    </div>
   );
 }
 

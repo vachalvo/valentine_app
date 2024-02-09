@@ -47,12 +47,6 @@ body{
     }
 }
 
-#evil-button{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  white-space: nowrap;
-}
 /* CSS */
 button {
   align-items: center;
@@ -116,25 +110,25 @@ button:hover {
   font-family: 'Calligraffitti', cursive;
   font-weight: 700;
   font-size: 4rem;
-  position: absolute;
   text-shadow: -5px 2px 7px #ced0d3;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   letter-spacing: 0.02em;
   text-align: center;
   color: #F9f1cc;
-  text-shadow: 2px 2px 0px #FFB650, 
-    4px 4px 0px #FFD662, 
-    6px 6px 0px  #FF80BF, 
-    8px 8px 0px #EF5097, 
+  text-shadow: 2px 2px 0px #FFB650,
+    4px 4px 0px #FFD662,
+    6px 6px 0px  #FF80BF,
+    8px 8px 0px #EF5097,
     10px 10px 0px #6868AC;
 }
  .pre-valentine{
-  position: absolute;
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
-  top:30%;
-  left: 43%;
+ }
+
+ .wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
