@@ -1,11 +1,13 @@
-# Valentine's Day React App
+# :heart: Valentine's Day React App
 
 This project is a simple React application designed to ask your loved one to be your Valentine. It was inspired by and adapted from [dessygil's Valentine's Day React project](https://github.com/dessygil/valentines-day-react), with all due credits and appreciation to the original creator.
 
-## Description
+## :notebook: Description
 The Valentine's Day React App provides a charming and interactive way to express your affection to your significant other on Valentine's Day or any special occasion. The app presents a heart animation with customizable messages and a button to pop the question.
 
-## Technology Stack
+Please note that this is not a complex project and was created as quickly as possible without any optimization or focus on code quality.
+
+## :computer: Technology Stack
 - React.js: A JavaScript library for building user interfaces, utilized for the frontend development.
 - CSS: Cascading Style Sheets for styling the components and animations.
 - HTML: Hypertext Markup Language for structuring the web page.
@@ -20,5 +22,5 @@ To use this project, follow these simple steps:
 6. Access the application in your web browser at `http://localhost:3000`.
 7. Share the link with your loved one and ask them to be your Valentine!
 
-## License
+## :page_with_curl: License
 This project is licensed under the [MIT License](LICENSE), allowing for modification, distribution, and private or commercial use.
